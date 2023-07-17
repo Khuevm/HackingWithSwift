@@ -32,18 +32,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input Text..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OOQ-ug-gGq">
-                                <rect key="frame" x="20" y="123.00000000000001" width="353" height="18.666666666666671"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LqI-dd-Iuw">
+                                <rect key="frame" x="20" y="123" width="353" height="675"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="77P-7a-CeM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OOQ-ug-gGq" firstAttribute="top" secondItem="77P-7a-CeM" secondAttribute="top" constant="20" id="Ik4-B6-W48"/>
-                            <constraint firstItem="77P-7a-CeM" firstAttribute="trailing" secondItem="OOQ-ug-gGq" secondAttribute="trailing" constant="20" id="LCJ-Ho-tTw"/>
-                            <constraint firstItem="OOQ-ug-gGq" firstAttribute="leading" secondItem="77P-7a-CeM" secondAttribute="leading" constant="20" id="eim-bP-s5S"/>
+                            <constraint firstItem="77P-7a-CeM" firstAttribute="bottom" secondItem="LqI-dd-Iuw" secondAttribute="bottom" constant="20" id="ST4-iS-Bcb"/>
+                            <constraint firstItem="LqI-dd-Iuw" firstAttribute="top" secondItem="77P-7a-CeM" secondAttribute="top" constant="20" id="cxV-Yg-7ke"/>
+                            <constraint firstItem="77P-7a-CeM" firstAttribute="trailing" secondItem="LqI-dd-Iuw" secondAttribute="trailing" constant="20" id="xRm-X6-ca8"/>
+                            <constraint firstItem="LqI-dd-Iuw" firstAttribute="leading" secondItem="77P-7a-CeM" secondAttribute="leading" constant="20" id="yok-Z9-2pn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="First View" id="Myg-gu-T3e">
@@ -54,7 +57,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="textField" destination="OOQ-ug-gGq" id="0kM-2c-U2S"/>
+                        <outlet property="textView" destination="LqI-dd-Iuw" id="y55-5U-Hqe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XuV-8m-GKs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -95,6 +98,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -9,7 +9,7 @@ import UIKit
 
 class FirstVC: UIViewController {
 
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,7 +19,7 @@ class FirstVC: UIViewController {
         if segue.identifier == "goToSecondVC" {
             let secondVC = segue.destination as! SecondVC
             
-            secondVC.text = textField.text!
+            secondVC.text = textView.text!
         }
     }
 }
