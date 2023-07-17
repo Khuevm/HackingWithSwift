@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hacking1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLU-VJ-yLV">
+                                <rect key="frame" x="20" y="79" width="67.333333333333329" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s79-w7-QUd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnH-Ff-qGg">
+                                <rect key="frame" x="164" y="79" width="65" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08T-B7-ntm">
+                                <rect key="frame" x="188.66666666666666" y="405.66666666666669" width="15.666666666666657" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGj-fH-61y">
+                                <rect key="frame" x="170.66666666666666" y="466.33333333333331" width="51.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tap"/>
+                                <connections>
+                                    <action selector="tapButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BmP-RA-rdC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xV6-Yc-UWG">
+                                <rect key="frame" x="140.66666666666666" y="521.33333333333337" width="111.66666666666666" height="35"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tap or Hold"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sGj-fH-61y" firstAttribute="top" secondItem="08T-B7-ntm" secondAttribute="bottom" constant="20" id="7tM-a1-YAM"/>
+                            <constraint firstItem="08T-B7-ntm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jme-Bp-myY"/>
+                            <constraint firstItem="RLU-VJ-yLV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QqE-lb-G2p"/>
+                            <constraint firstItem="RLU-VJ-yLV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cnX-ht-Vcp"/>
+                            <constraint firstItem="nnH-Ff-qGg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hHO-5l-929"/>
+                            <constraint firstItem="nnH-Ff-qGg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lQL-wW-heW"/>
+                            <constraint firstItem="08T-B7-ntm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="naR-VQ-T7a"/>
+                            <constraint firstItem="sGj-fH-61y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qfc-bx-eRZ"/>
+                            <constraint firstItem="xV6-Yc-UWG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xeo-YC-lTU"/>
+                            <constraint firstItem="xV6-Yc-UWG" firstAttribute="top" secondItem="sGj-fH-61y" secondAttribute="bottom" constant="20" id="ycM-2n-9Dh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="08T-B7-ntm" id="0bk-sU-bQe"/>
+                        <outlet property="tapAndHoldeButton" destination="xV6-Yc-UWG" id="YHC-mQ-Tng"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="isZ-G7-P1t"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="-23"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
