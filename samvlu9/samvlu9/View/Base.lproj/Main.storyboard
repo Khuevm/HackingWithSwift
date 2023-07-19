@@ -57,10 +57,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emU-xb-ATV">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="103"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QVB-a3-ZlN">
                                 <rect key="frame" x="20" y="131" width="100" height="100"/>
                                 <constraints>
@@ -128,13 +124,9 @@
                         <viewLayoutGuide key="safeArea" id="lxf-KI-E7Q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="emU-xb-ATV" firstAttribute="leading" secondItem="lxf-KI-E7Q" secondAttribute="leading" id="1Wx-rS-tQk"/>
-                            <constraint firstItem="lxf-KI-E7Q" firstAttribute="top" secondItem="emU-xb-ATV" secondAttribute="bottom" id="8hU-E9-c5a"/>
                             <constraint firstItem="QVB-a3-ZlN" firstAttribute="leading" secondItem="lxf-KI-E7Q" secondAttribute="leading" constant="20" id="Nje-hV-e78"/>
                             <constraint firstItem="raW-03-nUU" firstAttribute="leading" secondItem="lxf-KI-E7Q" secondAttribute="leading" constant="28" id="Q48-Bb-mfJ"/>
                             <constraint firstItem="QVB-a3-ZlN" firstAttribute="top" secondItem="lxf-KI-E7Q" secondAttribute="top" constant="28" id="V2F-ce-2aH"/>
-                            <constraint firstItem="lxf-KI-E7Q" firstAttribute="trailing" secondItem="emU-xb-ATV" secondAttribute="trailing" id="Yw2-ia-mEP"/>
-                            <constraint firstItem="emU-xb-ATV" firstAttribute="top" secondItem="sg4-Lt-uru" secondAttribute="top" id="bUf-vy-2QM"/>
                             <constraint firstItem="lxf-KI-E7Q" firstAttribute="trailing" secondItem="raW-03-nUU" secondAttribute="trailing" constant="28" id="nZk-N4-5c3"/>
                             <constraint firstItem="raW-03-nUU" firstAttribute="top" secondItem="QVB-a3-ZlN" secondAttribute="bottom" constant="20" id="tlF-aV-d9z"/>
                         </constraints>
@@ -159,7 +151,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZKe-Wf-bMz">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
