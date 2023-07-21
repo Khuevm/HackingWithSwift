@@ -8,12 +8,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    var dateFormatter = DateFormatter()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let currentDate = Date()
+        dateFormatter.dateFormat = "MMM d, yyyy HH:mm"
+        dateLabel.text = "\(dateFormatter.string(from: currentDate))"
     }
-
-
+    
+    
+    @IBAction func changeDateButtonDidTap(_ sender: Any) {
+        let dateVC = storyboard?.instantiateViewController(identifier: "DateView") as! DateVC
+        
+        dateVC.onTapDoneButton = {[weak self] datePicked in
+            self?.dateLabel.text = datePicked
+        }
+        
+        navigationController?.pushViewController(dateVC, animated: true)
+    }
 }
 
