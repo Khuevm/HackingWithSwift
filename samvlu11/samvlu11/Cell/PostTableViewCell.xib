@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="363" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="samvlu11" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="363"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="postTableViewCell" customModule="samvlu11" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="447" height="363"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="cv0-RX-AGr">
+                        <rect key="frame" x="28" y="12" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="3YN-lX-I42"/>
+                            <constraint firstAttribute="height" constant="60" id="BgB-sd-cCL"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="s3b-bX-Q5e">
+                        <rect key="frame" x="108" y="12" width="319" height="323.66666666666669"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11y-Ds-rOR">
+                                <rect key="frame" x="0.0" y="0.0" width="319" height="15.666666666666666"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ky3-pX-jza">
+                                <rect key="frame" x="0.0" y="19.666666666666657" width="319" height="284.33333333333337"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6h-cy-cAY">
+                                <rect key="frame" x="0.0" y="308" width="319" height="15.666666666666686"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84" id="hAH-Lb-kmq"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="s3b-bX-Q5e" secondAttribute="trailing" constant="20" id="ClG-Sa-voX"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="s3b-bX-Q5e" secondAttribute="bottom" constant="12" id="Ok1-7d-4nl"/>
+                    <constraint firstItem="s3b-bX-Q5e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Tyv-vv-IZL"/>
+                    <constraint firstItem="cv0-RX-AGr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Yzc-DP-sPQ"/>
+                    <constraint firstItem="s3b-bX-Q5e" firstAttribute="leading" secondItem="cv0-RX-AGr" secondAttribute="trailing" constant="20" id="dCj-8a-Vw5"/>
+                    <constraint firstItem="cv0-RX-AGr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="haq-UV-j4J"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="11y-Ds-rOR" id="Jbb-aK-JQI"/>
+                <outlet property="locationLabel" destination="O6h-cy-cAY" id="aFn-zB-7QD"/>
+                <outlet property="postImage" destination="cv0-RX-AGr" id="LdF-Db-9a4"/>
+                <outlet property="titleLabel" destination="Ky3-pX-jza" id="hio-n4-Ztf"/>
+            </connections>
+            <point key="canvasLocation" x="209.92366412213741" y="132.04225352112678"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
