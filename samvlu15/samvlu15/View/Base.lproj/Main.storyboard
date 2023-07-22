@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4C3-Jj-wkD">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="7Xl-nZ-hE6">
+            <objects>
+                <viewController id="4C3-Jj-wkD" customClass="ViewController" customModule="samvlu15" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i8q-KH-K5E">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fy2-sa-Q78">
+                                <rect key="frame" x="0.0" y="59" width="393" height="60"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="L34-1y-ttc">
+                                        <rect key="frame" x="130" y="14.666666666666671" width="133" height="32"/>
+                                        <segments>
+                                            <segment title="Feature"/>
+                                            <segment title="Charts"/>
+                                        </segments>
+                                        <color key="selectedSegmentTintColor" systemColor="systemGreenColor"/>
+                                        <connections>
+                                            <action selector="segmentValueChanged:" destination="4C3-Jj-wkD" eventType="valueChanged" id="npB-Pl-wE2"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGo-Pt-2in">
+                                        <rect key="frame" x="323.33333333333331" y="13" width="49.666666666666686" height="34.333333333333336"/>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                        <connections>
+                                            <action selector="searchButtonDidTap:" destination="4C3-Jj-wkD" eventType="touchUpInside" id="sOj-gM-PYk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="KGo-Pt-2in" firstAttribute="centerY" secondItem="Fy2-sa-Q78" secondAttribute="centerY" id="4uq-6s-IgZ"/>
+                                    <constraint firstItem="KGo-Pt-2in" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="L34-1y-ttc" secondAttribute="trailing" constant="8" symbolic="YES" id="7bB-4h-NhL"/>
+                                    <constraint firstItem="L34-1y-ttc" firstAttribute="centerX" secondItem="Fy2-sa-Q78" secondAttribute="centerX" id="Ah1-0F-OYj"/>
+                                    <constraint firstAttribute="height" constant="60" id="Crk-bE-ipW"/>
+                                    <constraint firstItem="L34-1y-ttc" firstAttribute="centerY" secondItem="Fy2-sa-Q78" secondAttribute="centerY" id="aTN-Oq-284"/>
+                                    <constraint firstAttribute="trailing" secondItem="KGo-Pt-2in" secondAttribute="trailing" constant="20" id="pye-6R-pS2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTk-Er-MP1">
+                                <rect key="frame" x="0.0" y="119" width="393" height="650"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aqm-EC-aPn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BTk-Er-MP1" firstAttribute="top" secondItem="Fy2-sa-Q78" secondAttribute="bottom" id="7yb-Xs-m9z"/>
+                            <constraint firstItem="Fy2-sa-Q78" firstAttribute="top" secondItem="aqm-EC-aPn" secondAttribute="top" id="DY2-mz-tkB"/>
+                            <constraint firstItem="Fy2-sa-Q78" firstAttribute="leading" secondItem="aqm-EC-aPn" secondAttribute="leading" id="Fpd-I7-CBu"/>
+                            <constraint firstItem="aqm-EC-aPn" firstAttribute="trailing" secondItem="Fy2-sa-Q78" secondAttribute="trailing" id="Klg-4i-Atv"/>
+                            <constraint firstItem="aqm-EC-aPn" firstAttribute="bottom" secondItem="BTk-Er-MP1" secondAttribute="bottom" id="NVV-qt-ah1"/>
+                            <constraint firstAttribute="trailing" secondItem="BTk-Er-MP1" secondAttribute="trailing" id="PGU-av-RL4"/>
+                            <constraint firstItem="BTk-Er-MP1" firstAttribute="leading" secondItem="aqm-EC-aPn" secondAttribute="leading" id="zRz-Sg-Y82"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="QzI-db-oWu"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="segmentView" destination="BTk-Er-MP1" id="57w-SG-LQ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I8K-dn-U6s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="541.22137404580155" y="-508.45070422535213"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
